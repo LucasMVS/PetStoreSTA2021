@@ -8,6 +8,7 @@ import java.nio.file.Paths;
 
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.contains;
 
 public class Pet {
     String uri = "https://petstore.swagger.io/v2/pet";
@@ -31,6 +32,8 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Hatchi"))
                 .body("status", is("available"))
+                .body("category.name", is("dog"))
+                .body("tags.name", contains("sta"))
         ;
     }
 

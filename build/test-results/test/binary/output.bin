@@ -16,7 +16,7 @@
         "id": 1,
         "name": "dog"
     },
-    "name": "hatchi",
+    "name": "Hatchi",
     "photoUrls": [
         "string"
     ],
@@ -31,7 +31,7 @@
     "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Thu, 12 Aug 2021 23:21:31 GMT
+%Date: Thu, 12 Aug 2021 23:37:07 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -46,7 +46,7 @@
         "id": 1,
         "name": "dog"
     },
-    "name": "hatchi",
+    "name": "Hatchi",
     "photoUrls": [
         "string"
     ],
