@@ -1,0 +1,18 @@
+{
+  "id": 1147877,
+  "category": {
+    "id": 1,
+    "name": "AX2345LORT"
+  },
+  "name": "Hatchi",
+  "photoUrls": [
+    "string"
+  ],
+  "tags": [
+    {
+      "id": 20210812,
+      "name": "data"
+    }
+  ],
+  "status": "sold"
+}
