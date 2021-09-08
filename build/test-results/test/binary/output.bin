@@ -14,7 +14,7 @@
     "id": 1147877,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "AX2345LORT"
     },
     "name": "Hatchi",
     "photoUrls": [
@@ -23,15 +23,15 @@
     "tags": [
 
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 20210812,
+            "name": "data"
 
         }
     ],
     "status": "available"
 }
 HTTP/1.1 200 OK
-%Date: Thu, 12 Aug 2021 23:37:07 GMT
+%Date: Wed, 08 Sep 2021 18:06:06 GMT
  Content-Type: application/json
 Transfer-Encoding: chunked
 Connection: keep-alive
@@ -44,7 +44,7 @@
     "id": 1147877,
     "category": {
         "id": 1,
-        "name": "dog"
+        "name": "AX2345LORT"
     },
     "name": "Hatchi",
     "photoUrls": [
@@ -53,10 +53,53 @@
     "tags": [
 
         {
-            "id": 2021,
-            "name": "sta"
+            "id": 20210812,
+            "name": "data"
 
         }
     ],
     "status": "available"
 }
+Request method:	GET
+9Request URI:	https://petstore.swagger.io/v2/pet/1147877
+Proxy:			<none>
+Request params:	<none>
+Query params:	<none>
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+2				Content-Type=application/json; charset=UTF-8
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+%Date: Wed, 08 Sep 2021 18:06:10 GMT
+ Content-Type: application/json
+Transfer-Encoding: chunked
+Connection: keep-alive
+ Access-Control-Allow-Origin: *
+6Access-Control-Allow-Methods: GET, POST, DELETE, PUT
+DAccess-Control-Allow-Headers: Content-Type, api_key, Authorization
+ Server: Jetty(9.2.9.v20150224)
+
+{
+    "id": 1147877,
+    "category": {
+        "id": 1,
+        "name": "AX2345LORT"
+    },
+    "name": "Hatchi",
+    "photoUrls": [
+        "string"
+    ],
+    "tags": [
+
+        {
+            "id": 20210812,
+            "name": "data"
+
+        }
+    ],
+    "status": "available"
+}
+o token é: AX2345LORT

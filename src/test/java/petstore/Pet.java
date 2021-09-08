@@ -17,7 +17,7 @@ public class Pet {
         return new String(Files.readAllBytes(Paths.get(caminhoJson)));
     }
 
-    @Test
+    @Test(priority = 1)
     public void incluirPet() throws IOException{
         String jsonBody = lerJson("db/pet1.json");
 
@@ -32,9 +32,34 @@ public class Pet {
                 .statusCode(200)
                 .body("name", is("Hatchi"))
                 .body("status", is("available"))
-                .body("category.name", is("dog"))
-                .body("tags.name", contains("sta"))
+                .body("category.name", is("AX2345LORT"))
+                .body("tags.name", contains("data"))
         ;
+    }
+
+    @Test(priority = 2)
+    public void consultarPet(){
+        String petId = "1147877";
+
+
+        String token =
+        given()
+                .contentType("application/json")
+                .log().all()
+        .when()
+                .get(uri + "/" + petId)
+        .then()
+                .log().all()
+                .statusCode(200)
+                .body("name", is("Hatchi"))
+                .body("category.name", is("AX2345LORT"))
+                .body("status", is("available"))
+        .extract()
+                .path("category.name")
+        ;
+
+        System.out.println("O token é: " + token);
+
     }
 
 }
